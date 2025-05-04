@@ -8,26 +8,33 @@
 </head>
 <body>
     <div class="main-div">
-        <div class="main-left-inner-div">
+        <!--Left Column-->
+        <div class="left top">
             <p>Enter cash from customer:</p>
             <input id="cash" type="number">
             <button id="purchase-btn">Purchase</button>
+            <button id="clear-btn">Clear</button>
             <h2 id="total">Total: $3.26</h2>
         </div>
-        <div class="main-left-inner-div" id="cid-div">
-            <h2>Change in drawer:</h2>
-            <p>Pennies: $1.01</p>
-            <p>Nickels: $2.05</p>
-            <p>Dimes: $3.1</p>
-            <p>Quarters: $4.25</p>
-            <p>Ones: $90</p>
-            <p>Fives: $55</p>
-            <p>Tens: $20</p>
-            <p>Twenties: $60</p>
-            <p>Hundreds: $100</p>
+        <div class="left bottom">
+            <h2>Input Shortcuts</h2>
+            <button class="value-btn" value="100">100</button>
+            <button class="value-btn" value="20">20</button>
+            <button class="value-btn" value="10">10</button>
+            <button class="value-btn" value="5">5</button>
+            <button class="value-btn" value="1">1</button>
+            <button class="value-btn" value=".25">.25</button>
+            <button class="value-btn" value=".10">.10</button>
+            <button class="value-btn" value=".05">.05</button>
+            <button class="value-btn" value=".01">0.1</button>
         </div>
-        <div id="change-due"></div>
-        <div class="main-right-inner-div">
+        <!--Middle Column-->
+        <div id="change-due" class="middle top">
+        </div>
+        <div id="cid-div" class="middle bottom">
+        </div>
+        <!--Right Column-->
+        <div id="transaction-div" class="right top bottom">
             <h1>Transaction History</h1>
             
         </div>
